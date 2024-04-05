@@ -1,10 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react'
 import './styling/style.scss'
-import SearchResult from './Components/SearchResults.jsx';
+import SearchResult from './Components/SearchResults.jsx'
 
 function App() {
-  const [books, setBooks] = useState([]);
-  const [query, setQuery] = useState('');
+  const [books, setBooks] = useState([])
+  const [query, setQuery] = useState('')
+
 
   useEffect(() => {
     const fetchData = async () => {
@@ -12,15 +13,15 @@ function App() {
         const response = await fetch(
           `https://openlibrary.org/search.json?q=james%20bond&fields=*,availability&limit=1${encodeURIComponent(query)}`
         );
-        const data = await response.json();
-        setBooks(data.docs);
+        const data = await response.json()
+        setBooks(data.docs)
       } else {
-        setBooks([]);
+        setBooks([])
       }
-    };
+    }
 
-    fetchData().catch(console.error);
-  }, [query]);
+    fetchData().catch(console.error)
+  }, [query])
 
   return (
     <div className="App">
