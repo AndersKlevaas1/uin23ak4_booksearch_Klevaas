@@ -1,19 +1,15 @@
 import React from 'react'
+import BookItem from './BookItem.jsx'
 
-function SearchResult({ title, firstPublishYear, author, averageRating, amazonId }) {
-    const handleAmazonSearch = () => {
-        window.open(`https://www.amazon.com/s?k=${amazonId}`, '_blank')
-    }
 
-    return (
-        <div className="search-result">
-            <h3>{title}</h3>
-            <p>Første publisering år: {firstPublishYear}</p>
-            <p>Forfatter: {author}</p>
-            <p>Gjennomsnittlig vurdering: {averageRating}</p>
-            <button onClick={handleAmazonSearch}>Søk på Amazon</button>
-        </div>
-    )
+function SearchResults({ books }) {
+  return (
+    <section className="searchresult">
+      {books.map((book, index) => (
+        <BookItem key={index} {...book} />
+      ))}
+    </section>
+  )
 }
 
-export default SearchResult
+export default SearchResults

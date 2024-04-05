@@ -1,0 +1,39 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 20px;
+  }
+
+  div#root {
+    margin: 0 auto;
+    ;
+  }
+  
+  header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+main {
+  margin-left: 20%;
+}
+  
+  .searchresult {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .bookitem {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .search-results {
+      flex-direction: column;
+    }
+  }
