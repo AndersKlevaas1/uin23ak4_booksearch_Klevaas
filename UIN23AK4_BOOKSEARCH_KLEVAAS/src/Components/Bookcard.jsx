@@ -5,7 +5,7 @@ function BookCard({ title, first_publish_year, author_name, cover_i, ratings_ave
   const amazonSearchUrl = id_amazon && id_amazon.length > 0 ? `https://www.amazon.com/s?k=${id_amazon}` : '#';
 
   return (
-    <article className="bookitem">
+    <article className="bookcard">
       <img src={coverImageUrl} alt={`Cover of ${cover_i}`} style={{ width: '100px', height: '150px', objectFit: 'cover' }} />
       <h3>{title}</h3>
       <p>Publiseringsår: {first_publish_year}</p>
