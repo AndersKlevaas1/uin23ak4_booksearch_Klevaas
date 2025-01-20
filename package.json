@@ -1,0 +1,23 @@
+{
+  "name": "uin23ak4_booksearch_klevaas",
+  "version": "1.0.0",
+  "description": "Repo for boksøking",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndersKlevaas1/uin23ak4_booksearch_Klevaas.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AndersKlevaas1/uin23ak4_booksearch_Klevaas/issues"
+  },
+  "homepage": "https://github.com/AndersKlevaas1/uin23ak4_booksearch_Klevaas#readme",
+  "dependencies": {
+    "package-name": "^0.1.0"
+  }
+}
